@@ -1,0 +1,35 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+
+  h1, h2, h3, h4, h5{
+
+    color: blue;
+  }
+
+  .container {
+    display: flex;
+    min-height: 100vh;
+  }
+  .column {
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  .left {
+    flex: 1;
+    background-color: #f4f4f4;
+  }
+  .center {
+    flex: 2;
+    background-color: #fff;
+  }
+  .right {
+    flex: 1;
+    background-color: #f4f4f4;
+  }
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+    }
+  }
